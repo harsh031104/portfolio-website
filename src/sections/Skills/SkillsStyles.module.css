@@ -1,0 +1,30 @@
+.container {
+  display: grid;
+  flex-direction: column;
+  text-align: center;
+  padding: 20px;
+}
+
+.skillGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); /* Ensures responsive grid */
+  gap: 20px;
+  justify-content: center;
+  padding: 20px;
+}
+
+/* Ensures the title is properly centered */
+.sectionTitle {
+  font-size: 24px;
+  font-weight: bold;
+  color: var(--primary-color);
+  margin-bottom: 20px;
+}
+
+/* Mobile specific styles */
+@media screen and (max-width: 768px) {
+  .skillGrid {
+    grid-template-columns: repeat(2, 1fr); /* Two cards per row on mobile */
+    gap: 10px;
+  }
+}

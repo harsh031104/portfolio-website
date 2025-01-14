@@ -1,0 +1,33 @@
+.card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  padding: 20px;
+  width: 100px;
+  height: 100px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s, border-color 0.2s;
+}
+
+.card:hover {
+  transform: scale(1.05);
+  border-color:aqua /* Lighten border color */
+}
+.card:focus-within {
+  border-color:aqua /* Keep yellow border when focused */
+}
+.skillImage {
+  max-width: 100%; /* Ensure the image doesn't exceed card width */
+  max-height: 100%; /* Ensure the image doesn't exceed card height */
+  object-fit: contain; /* Maintain the aspect ratio of the image */
+  aspect-ratio: 1; /* Ensure a square aspect ratio */
+}
+@media screen and (max-width: 768px) {
+  .card {
+    width: 100px; /* Reduce the card width on mobile for a better fit */
+    height: 100px; /* Keep the height consistent */
+  }
+}

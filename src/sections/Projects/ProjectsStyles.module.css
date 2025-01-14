@@ -1,0 +1,32 @@
+.projectsContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px; /* Consistent spacing between cards */
+  padding: 20px;
+}
+
+@media (min-width: 800px) {
+  .projectsContainer {
+    justify-content: space-evenly;
+  }
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Ensures all content inside is centered horizontally */
+  text-align: center;
+  padding: 20px; /* Add some padding for better responsiveness */
+}
+
+.sectionTitle {
+  font-size: 2.5rem; /* Adjust size if necessary */
+  font-weight: bold;
+  margin-bottom: 30px; /* Space below the title */
+  text-align: center; /* Ensures text is centered */
+  width: 100%; /* Prevents title from collapsing in smaller screens */
+}
+h3{
+  color:darkgrey;
+}
+
