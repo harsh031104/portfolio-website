@@ -91,7 +91,7 @@ function Projects() {
             src={estatea}
             link="https://github.com/harsh031104/Real-Estate-Database-website"
             h3="Home-Hub"
-            p="Real Estate DB System"
+            p="Real Estate DBMS"
           />
         </motion.div>
         {/* Card 3: Moves Left */}
