@@ -3,14 +3,16 @@
   flex-direction: column;
   text-align: center;
   padding: 20px;
+  
 }
 
 .skillGrid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); /* Ensures responsive grid */
   gap: 20px;
-  justify-content: center;
+  justify-items: center;
   padding: 20px;
+  
 }
 
 /* Ensures the title is properly centered */

@@ -1,7 +1,25 @@
+/* Ensure the parent container spans the full viewport height */
+body {
+  
+  margin: 0; 
+  padding: 0; 
+  
+}
 .container {
-  text-align: center;
-  p {
-    font-size: 16px;
-    color: var(--footer-text-color);
-  }
+  
+  margin-top: auto; 
+  text-align: center; 
+  padding: 10px; 
+  
+  color: var(--footer-text-color, #333);
+  width: 100%; /* Ensures the footer spans the full width */
+   /* Includes padding in the width calculation */
+  
+  
+}
+
+
+.container p {
+  margin: 0;
+  font-size: 16px; 
 }
