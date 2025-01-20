@@ -1,6 +1,6 @@
 import './App.css';
 import React, { useState } from 'react';
-import Navbar from './sections/navbar/navbar';
+import Navbar from './sections/Navbar/Navbar';
 import Contact from './sections/Contact/Contact';
 import Footer from './sections/Footer/Footer';
 import Hero from './sections/Hero/Hero';
