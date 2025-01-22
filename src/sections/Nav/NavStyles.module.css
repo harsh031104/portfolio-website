@@ -38,16 +38,36 @@
     transition: transform 0.3s ease-in-out;
   }
   
-  .navLinks a {
-    color: var(--text-color);
-    text-decoration: none;
-    font-size: 18px;
-    transition: color 0.3s;
-  }
-  
-  .navLinks a:hover {
-    color: var(--btn-color);
-  }
+  /* Navigation Links */
+.navLinks a {
+  color: var(--text-color); /* Dynamic text color based on theme */
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 500;
+  position: relative; /* Required for the ::after pseudo-element */
+  transition: color 0.3s ease-in-out; /* Smooth text color transition */
+}
+
+.navLinks a:hover {
+  color: var(--btn-color); /* Change text color on hover */
+}
+
+/* Hover line effect */
+.navLinks a::after {
+  content: ""; /* Create the line */
+  position: absolute;
+  left: 0;
+  bottom: -4px; /* Position below the text */
+  width: 0%; /* Start with no line */
+  height: 2px; /* Line thickness */
+  background-color: var(--btn-color); /* Dynamic line color */
+  transition: width 0.3s ease-in-out; /* Smooth line animation */
+}
+
+.navLinks a:hover::after {
+  width: 100%; /* Expand line to full width on hover */
+}
+
   
   /* Hamburger Menu for Mobile */
   .hamburger {
