@@ -80,6 +80,7 @@ function Projects() {
             link="https://github.com/harsh031104/Online-Voting-Portal"
             h3="VoteSphere"
             p="Online Voting Portal"
+            details="VoteSphere is a secure online platform for managing voting and elections seamlessly."
           />
         </motion.div>
         {/* Card 2: Moves Right */}
@@ -92,6 +93,8 @@ function Projects() {
             link="https://github.com/harsh031104/Real-Estate-Database-website"
             h3="Home-Hub"
             p="Real Estate DBMS"
+            
+
           />
         </motion.div>
         {/* Card 3: Moves Left */}
@@ -104,6 +107,7 @@ function Projects() {
             link="https://github.com/harsh031104/Blog-Post-website"
             h3="Daily-Blogs"
             p="Blog Post"
+           
           />
         </motion.div>
       </motion.div>
