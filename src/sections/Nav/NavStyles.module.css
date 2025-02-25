@@ -83,6 +83,17 @@
     height: 2.5px;
     background-color: var(--text-color);
   }
+  .themeToggle {
+    width: 25px;  /* Adjust size */
+    height: 25px; /* Adjust size */
+    cursor: pointer;
+    transition: transform 0.3s ease; /* Smooth effect */
+  }
+  
+  .themeToggle:hover {
+    transform: scale(1.1); /* Slightly enlarge on hover */
+  }
+  
   
   /* Responsive Styles */
   @media (max-width: 768px) {

@@ -1,7 +1,6 @@
 import styles from './HeroStyles.module.css';
 import heroImg from '../../assets/Design uten navnnn.png';
-import sun from '../../assets/sun.svg';
-import moon from '../../assets/moon.svg';
+
 import twitterLight from '../../assets/twitter-light.svg';
 import twitterDark from '../../assets/twitter-dark.svg';
 import githubLight from '../../assets/github-light.svg';
@@ -24,7 +23,7 @@ function Hero() {
   const { theme, toggleTheme } = useTheme();
   const [blinkText, setBlinkText] = useState('Web Developer');
 
-  const themeIcon = theme === 'light' ? sun : moon;
+ 
   const twitterIcon = theme === 'light' ? twitterLight : twitterDark;
   const githubIcon = theme === 'light' ? githubLight : githubDark;
   const linkedinIcon = theme === 'light' ? linkedinLight : linkedinDark;
@@ -54,17 +53,12 @@ function Hero() {
         animate={inView ? { x: 0 } : { x: '-100vw' }}
         transition={{ type: 'spring', stiffness: 10 }}
       >
-        <img
-          src={heroImg}
-          className={styles.hero}
-          alt="Profile picture of Harsh Kumar"
-        />
-        <img
-          className={styles.colorMode}
-          src={themeIcon}
-          alt="Color mode icon"
-          onClick={toggleTheme}
-        />
+        <div className={`${styles.heroContainer} ${theme === 'light' ? styles.borderBlack : ''}`}>
+          <img src={heroImg} className={styles.hero} alt="Profile picture of Harsh Kumar" />
+        </div>
+
+
+        
       </motion.div>
 
       {/* Info Section */}
